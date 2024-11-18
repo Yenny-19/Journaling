@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* paleta de colores */
+
+:root {
+    --jacarta: #3F2A53;
+    --dark-blue-gray: #75619E;
+    --wisteria: #BEAEDB;
+    --bright-gray: #E6EFF8;
+    --black-coffee: #3A2D34;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Sour Gummy", sans-serif;
+}
+
+hr{
+    margin: 30px;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/bg.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: var(--black-coffee);
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: var(--black-coffee);
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: var(--jacarta);
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.beneficios_journaling {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.beneficio{
+    border: 2px solid var(--dark-blue-gray);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.img_beneficio {
+    width: 80px;
+
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: var(--wisteria);
+    color: var(--jacarta);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-1:hover {
+    background-color: var(--dark-blue-gray);
+    color: var(--bright-gray);
+}
+
+.journaling {
+    padding: 100px 0;
+    background-color: #e1e2e6;
+    position: relative;
+}
+
+.journaling-content {
+    align-items: center;
+    text-align: center;
+}
+
+.journaling-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: var(--black-coffee);
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.journaling-group {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+}
+
+.journaling-1 {
+    background-color: var(--jacarta);
+    border: 5px solid var(--dark-blue-gray);
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.journaling-1 p {
+    color: var(--bright-gray);
+}
+
+.journaling-1 img {
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+}
+
+.journaling-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.journaling-1 h3 {
+    color: var(--wisteria);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.services {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.services-content {
+    text-align: center;
+}
+
+.services-content h2 {
+    font-style: 55px;
+    line-height: 70px;
+    color: #5E3023;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.services-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.services-1 {
+    padding: 0 100px;
+}
+
+.services-1 img {
+    width: 25px;
+    margin-bottom: 15px;
+}
+
+.services-1 h3 {
+    color: #F3E9DD;
+    font-size: 18px;
+}
+
+.general {
+    display: flex;
+}
+
+.general-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #e1e2e6;
+}
+
+.general-2 {
+    background-image: url(./img/cafe-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-3 {
+    background-image: url(./img/granos-de-cafe.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+
+.blog {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1 {
+    padding: 15px 55px;
+}
+
+.blog-1 img {
+    width: 125px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-1 h3 {
+    font-size: 25px;
+    color: #323337;
+}
+
+.footer {
+    padding: 100px 0;
+    background-color: black;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #b56852;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Media query para pantallas de hasta 768px */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .header-content p,
+    .journaling-content h2 {
+        padding: 0 20px;
+    }
+
+    .journaling-group,
+    .services-group,
+    .blog-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .journaling-1,
+    .services-1,
+    .blog-1 {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .general-1,
+    .general-2,
+    .general-3 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Media query para pantallas de hasta 480px */
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .menu .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .header-content p,
+    .journaling-content h2,
+    .services-content p {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .footer-content .link h3,
+    .footer-content .link a {
+        font-size: 14px;
+    }
+}
